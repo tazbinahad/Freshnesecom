@@ -3,7 +3,10 @@
     weight: 700;
     size: 15px;
   }
-  text-transform: capitalize;
+  text: {
+    transform: capitalize;
+    decoration: none;
+  }
   display: inline-flex;
   align-items: center;
   transition: 0.1s ease-in-out all;

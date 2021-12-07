@@ -1,0 +1,42 @@
+.CategoriRecipe {
+  background-image: url('../../../../images/Group.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 420px;
+  height: 280px;
+  padding: 48px 33px 32px 33px;
+  border-radius: 12px;
+  position: relative;
+  ::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #f4f8ec;
+    z-index: -1;
+    border-radius: 12px;
+  }
+  .singleRecipe {
+    h6 {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: #6a983c;
+    }
+    h3 {
+      padding-top: 8px;
+      padding-bottom: 80px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      color: #151515;
+    }
+    a {
+      button {
+        background: transparent;
+      }
+    }
+  }
+}

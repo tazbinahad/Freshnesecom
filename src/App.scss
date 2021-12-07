@@ -13,6 +13,9 @@ body {
   line-height: 19px;
   color: $secondaryColor;
 }
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -79,7 +82,9 @@ caption,
   .container-xl,
   .container-xxl {
     max-width: 1220px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: {
+      left: 1rem;
+      right: 1rem;
+    }
   }
 }

@@ -1,0 +1,30 @@
+.categoriItem {
+  max-width: 269px;
+  h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+    margin: 0;
+  }
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    li {
+      a {
+        padding-left: 0;
+        padding: {
+          top: 6px;
+          bottom: 6px;
+        }
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #6a983c;
+      }
+    }
+  }
+}

@@ -1,10 +1,11 @@
 import './App.scss';
 import Layout from './Components/Layout/Layout';
+import CategoriMenu from './Components/Main/CategoriMenu/CategoriMenu';
 
 function App() {
     return (
         <Layout>
-            <div className="container" />
+            <CategoriMenu />
         </Layout>
     );
 }
