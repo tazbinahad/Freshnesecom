@@ -1,0 +1,40 @@
+.mainMenu {
+  background-color: #f9f9f9;
+  ul li {
+    position: relative;
+    ::after {
+      content: '';
+      position: absolute;
+      display: block;
+      text-indent: -9999px;
+      height: 8px;
+      width: 10px;
+      line-height: 12px;
+      text-align: center;
+      top: 50%;
+      right: 33px;
+      transform: translateY(-20%);
+      background: url(../../../images/Icons/downArrow.svg) no-repeat;
+      background-size: 12px;
+      transition: 0.3s ease-in-out all;
+    }
+
+    a {
+      padding-right: 50px;
+      color: #151515;
+      font: {
+        size: 15px;
+        weight: 500;
+      }
+    }
+  }
+  ul li:hover {
+    a {
+      color: #6a983c;
+    }
+    a::after {
+      transform: rotate(180deg);
+      margin-top: -5px;
+    }
+  }
+}

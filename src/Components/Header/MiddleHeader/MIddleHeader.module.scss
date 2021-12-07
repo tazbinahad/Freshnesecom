@@ -1,0 +1,109 @@
+@import '../../../scss/Global.scss';
+.middleHeader {
+  padding: 20px 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+/* productCatagoriSearch */
+.productCatagoriSearch {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 16px;
+  background-color: $secondaryColor5;
+  border: 1px solid $secondaryColor4;
+  border-radius: 12px;
+
+  .select:active,
+  .select:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .searchInput {
+    position: relative;
+    padding-left: 25px;
+    input {
+      width: 262px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: transparent;
+      border: none;
+      font-size: 14px;
+      color: $secondaryColor3;
+    }
+    input:focus {
+      outline: none;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      cursor: pointer;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .searchInput::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: $secondaryColor4;
+  }
+  .select {
+    background-color: transparent;
+    border: none;
+    color: $secondaryColor;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 28px;
+    position: relative;
+    option {
+      padding: 10px 20px;
+    }
+  }
+}
+.userCart {
+  display: flex;
+  span {
+    margin-left: 30px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  // .user {
+  // }
+  .cart {
+    position: relative;
+    span {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      line-height: 16px;
+      left: -35px;
+      bottom: -5px;
+      background-color: #e6704b;
+      color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      font: {
+        size: 12px;
+        weight: 600;
+      }
+    }
+  }
+}

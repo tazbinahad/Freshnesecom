@@ -1,0 +1,85 @@
+$body-bg: #fff;
+@import '~bootstrap/scss/bootstrap.scss';
+@import './scss/global.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Root Css */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $secondaryColor;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $secondaryColor;
+  font: {
+    family: 'Poppins', sans-serif;
+    weight: 600;
+  }
+}
+h1,
+.h1 {
+  font-size: 32px;
+  line-height: 45px;
+}
+h2,
+.h2 {
+  font-size: 26px;
+  line-height: 39px;
+}
+h3,
+.h3 {
+  font-size: 22px;
+  line-height: 33px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+h5,
+.h5 {
+  font-size: 15px;
+  line-height: 22px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+  line-height: 18px;
+}
+img,
+.img {
+  max-width: 100%;
+}
+/* Caption */
+caption,
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

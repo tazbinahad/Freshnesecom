@@ -1,0 +1,23 @@
+@import '../../../scss/Global.scss';
+.inputGroup {
+  display: inline-flex;
+  flex-direction: column;
+}
+.inputGroup {
+  label {
+    font: {
+      weight: 600;
+      size: 12px;
+    }
+    line-height: 18px;
+    color: $secondaryColor;
+  }
+  input {
+    font-size: 14px;
+    background: $secondaryColor5;
+    border: 1px solid $secondaryColor4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 11px 16px 12px 21px;
+  }
+}

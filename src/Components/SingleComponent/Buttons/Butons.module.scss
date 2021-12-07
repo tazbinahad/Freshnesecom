@@ -1,0 +1,39 @@
+@mixin primaryButton {
+  font: {
+    weight: 700;
+    size: 15px;
+  }
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.1s ease-in-out all;
+  border: 2px solid;
+  border-radius: 12px;
+}
+.largeButton {
+  @include primaryButton;
+  padding: 16.5px 48px;
+}
+.mediumButton {
+  @include primaryButton;
+  padding: 12.5px 16px;
+}
+.smallButton {
+  @include primaryButton;
+  padding: 6.5px 12px;
+}
+.default {
+  background-color: #fff;
+  border-color: #92c064;
+  color: #151515;
+}
+.colored {
+  background-color: #6a983c;
+  border-color: #46760a;
+  color: #ffffff;
+}
+.bright {
+  background-color: #f5f5f5;
+  border-color: transparent;
+  color: #151515;
+}
